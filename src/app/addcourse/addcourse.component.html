@@ -2,29 +2,31 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row">
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-<label for="" class="form-label">course type</label>
-<input type="text" class="form-control">
+                <form #addcourse="ngForm">  
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">          
+<label for="" class="form-label">course Title</label>
+<input type="text" class="form-control" [(ngModel)]="course.courseTitle" name="course title">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">duration</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" [(ngModel)]="course.courseDuration" name="duration">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Description</label>
-                    <textarea name="" id="" cols="20" rows="10" class="form-control"></textarea>
+                    <textarea name="" id="" cols="20" rows="10" class="form-control" [(ngModel)]="course.courseDescription" name="description"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">venue</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control"  [(ngModel)]="course.courseVenue" name="venue">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">date</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" [(ngModel)]="course.courseDate" name="date">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <button class="btn btn-warning">REGISTER</button>
                 </div>
+            </form> 
             </div>
         </div>
     </div>

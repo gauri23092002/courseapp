@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./addcourse.component.css']
 })
 export class AddcourseComponent implements OnInit {
+course={
+  courseTitle:"",
+  courseDescription:"",
+  courseDate:"",
+  courseVenue:"",
+  courseDuration:""
 
+}
   constructor() { }
 
   ngOnInit(): void {
